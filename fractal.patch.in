@@ -1,0 +1,56 @@
+diff --git a/src/session/view/content/explore/mod.ui b/src/session/view/content/explore/mod.ui
+index a7815bd4..6202bd0f 100644
+--- a/src/session/view/content/explore/mod.ui
++++ b/src/session/view/content/explore/mod.ui
+@@ -69,8 +69,8 @@
+                   <object class="AdwClampScrollable">
+                     <property name="vexpand">True</property>
+                     <property name="hexpand">True</property>
+-                    <property name="maximum-size">750</property>
+-                    <property name="tightening-threshold">550</property>
++                    <property name="maximum-size">%WIDTH%</property>
++                    <property name="tightening-threshold">%THRESHOLD%</property>
+                     <property name="child">
+                       <object class="GtkListView" id="listview">
+                         <property name="margin-end">24</property>
+diff --git a/src/session/view/content/room_details/members_page/members_list_view/mod.ui b/src/session/view/content/room_details/members_page/members_list_view/mod.ui
+index 64111df6..c08990cd 100644
+--- a/src/session/view/content/room_details/members_page/members_list_view/mod.ui
++++ b/src/session/view/content/room_details/members_page/members_list_view/mod.ui
+@@ -22,8 +22,8 @@
+             <property name="child">
+               <object class="AdwClamp">
+                 <property name="hexpand">True</property>
+-                <property name="maximum-size">750</property>
+-                <property name="tightening-threshold">550</property>
++                <property name="maximum-size">%WIDTH%</property>
++                <property name="tightening-threshold">%THRESHOLD%</property>
+                 <child>
+                   <object class="GtkSearchEntry" id="search_entry">
+                     <property name="placeholder-text" translatable="yes">Search for room members</property>
+diff --git a/src/session/view/content/room_history/mod.ui b/src/session/view/content/room_history/mod.ui
+index fd83a5aa..6903d934 100644
+--- a/src/session/view/content/room_history/mod.ui
++++ b/src/session/view/content/room_history/mod.ui
+@@ -154,8 +154,8 @@
+                               <object class="AdwClampScrollable">
+                                 <property name="vexpand">True</property>
+                                 <property name="hexpand">True</property>
+-                                <property name="maximum-size">750</property>
+-                                <property name="tightening-threshold">550</property>
++                                <property name="maximum-size">%WIDTH%</property>
++                                <property name="tightening-threshold">%THRESHOLD%</property>
+                                 <property name="child">
+                                   <object class="GtkListView" id="listview">
+                                     <style>
+@@ -179,8 +179,8 @@
+             <child>
+               <object class="AdwClamp">
+                 <property name="vexpand">False</property>
+-                <property name="maximum-size">750</property>
+-                <property name="tightening-threshold">550</property>
++                <property name="maximum-size">%WIDTH%</property>
++                <property name="tightening-threshold">%THRESHOLD%</property>
+                 <child>
+                   <object class="MessageToolbar" id="message_toolbar">
+                     <property name="room" bind-source="ContentRoomHistory" bind-property="room" bind-flags="sync-create" />

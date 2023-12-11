@@ -1,0 +1,26 @@
+diff --git a/data/ui/views/base.ui b/data/ui/views/base.ui
+index 5fdb3ac..85557d5 100644
+--- a/data/ui/views/base.ui
++++ b/data/ui/views/base.ui
+@@ -57,8 +57,8 @@
+                               <object class="AdwClamp">
+                                 <property name="vexpand">1</property>
+                                 <property name="visible">True</property>
+-                                <property name="maximum_size">670</property>
+-                                <property name="tightening_threshold">670</property>
++                                <property name="maximum_size">%WIDTH%</property>
++                                <property name="tightening_threshold">%WIDTH%</property>
+                                 <child>
+                                   <object class="GtkBox" id="status">
+                                     <property name="valign">center</property>
+@@ -158,8 +158,8 @@
+                           <object class="AdwClamp" id="content_box">
+                             <property name="vexpand">1</property>
+                             <property name="visible">True</property>
+-                            <property name="maximum_size">670</property>
+-                            <property name="tightening_threshold">670</property>
++                            <property name="maximum_size">%WIDTH%</property>
++                            <property name="tightening_threshold">%WIDTH%</property>
+                             <style>
+                               <class name="ttl-view" />
+                             </style>
